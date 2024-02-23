@@ -8,7 +8,6 @@ public class ToRoman {
         StringBuilder result = new StringBuilder();
 
         for (Map.Entry<String, Integer> entry : NumbersMapping.ROMAN_TO_INT.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
             while (n >= entry.getValue()) {
                 result.append(entry.getKey());
                 n -= entry.getValue();
